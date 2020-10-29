@@ -1,0 +1,71 @@
+/* Theme Name: Mon premier thème fait le 29 octobre 2020
+   Description: DESCRIPTION DE VOTRE THEME.
+   Version: 1.0
+   Author: Lemal Emmanuel  
+*/
+
+
+body {
+    background-color: aliceblue;
+}
+
+.container {
+    background-color: white;
+    width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    min-height: 100px;
+    border-bottom: solid 2px blueviolet;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: brown;
+}
+
+h2 {
+    color: grey;
+}
+
+.contenupremierarticle {
+    min-height: 200px;
+    background-color: cornflowerblue;
+}
+
+.articlealaune {
+    display: flex;
+
+}
+
+.articlealaune img {
+    width: 600px;
+    height: auto;
+}
+
+.articlealaune h3 {
+    color: crimson;
+    font-size: 48px;
+}
+
+.conteneurdemesarticles {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.unarticle {
+    box-sizing: border-box;
+    border: solid 1px gray;
+    width: 25%;
+   
+}
+
+.unarticle img {
+    width: 100%;
+}
+
+.contenutextes {
+    padding: 10px;
+}
