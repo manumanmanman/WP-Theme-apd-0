@@ -8,10 +8,12 @@
     <title><?php bloginfo('name'); ?> </title>
 </head>
 <body <?php body_class(); ?>>
+
     <div class="container">
 <header>
 <h1><?php bloginfo('name'); ?> </h1>
 <h2><?php bloginfo('description'); ?></h2>
+
 <nav>
 <?php wp_nav_menu(); ?>
 
@@ -23,8 +25,8 @@
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <div class="article">
-    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">  
+    <div id="id_<?php echo get_the_ID(); ?>" class="article" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');">
+   
     <h2><?php the_title(); ?></h2>
     <?php the_content(); ?>
     <!-- <p class="date"><?php the_date(); ?> </p> -->
@@ -40,7 +42,8 @@
 </div>
 <div class="right">
     
-droite
+<?php dynamic_sidebar( 'zone-widgets' ); ?>
+
 
 </div>
 

@@ -38,11 +38,7 @@
 
 
 </div>
-<div class="right">
-    
-droite
 
-</div>
 
 <div id="footer">
 

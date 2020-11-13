@@ -12,36 +12,31 @@
 <header>
 <h1><?php bloginfo('name'); ?> </h1>
 <h2><?php bloginfo('description'); ?></h2>
-<nav>
-<?php wp_nav_menu(); ?>
-
-</nav>
+    <nav>
+    <?php wp_nav_menu(); ?>
+    </nav>
 
 
 </header>
 <div class="left">
 
+
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-    <div class="article">
+<div class="article">
     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">  
     <h2><?php the_title(); ?></h2>
     <?php the_content(); ?>
     <!-- <p class="date"><?php the_date(); ?> </p> -->
-  
+
     </div>
-
-    <?php endwhile; endif; ?>
-
-
-
+<?php endwhile; endif; ?>
 
 
 </div>
 <div class="right">
     
-droite
-
+    droite
 </div>
 
 <div id="footer">

@@ -1,71 +1,234 @@
-/* Theme Name: Mon premier thème fait le 29 octobre 2020
+/* Theme Name: NOM DE VOTRE THEME
+   URI: http://www.VOTRE-SITE.COM
    Description: DESCRIPTION DE VOTRE THEME.
    Version: 1.0
-   Author: Lemal Emmanuel  
+   Author: VOTRE NOM   
 */
 
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    --main-bg-color: #227093;
+    --gris: #aaa69d;
+    --gris-clair: #f7f1e3;
+  }
+
+
+
 body {
-    background-color: aliceblue;
+    background: var(--main-bg-color);
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
-    background-color: white;
-    width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
 
-header {
-    min-height: 100px;
-    border-bottom: solid 2px blueviolet;
-    margin-bottom: 30px;
-}
-
-h1 {
-    color: brown;
-}
-
-h2 {
-    color: grey;
-}
-
-.contenupremierarticle {
-    min-height: 200px;
-    background-color: cornflowerblue;
-}
-
-.articlealaune {
+    width:1200px;
+    background: #ccae62!important;
+    margin: 0 auto;
+    min-height: 100vh;
     display: flex;
-
-}
-
-.articlealaune img {
-    width: 600px;
-    height: auto;
-}
-
-.articlealaune h3 {
-    color: crimson;
-    font-size: 48px;
-}
-
-.conteneurdemesarticles {
-   display: flex;
-   flex-wrap: wrap;
-}
-
-.unarticle {
-    box-sizing: border-box;
-    border: solid 1px gray;
-    width: 25%;
+    flex-wrap: wrap;
    
 }
 
-.unarticle img {
+header {
+    height:200px;
+    background: var(--gris);
+    padding: 40px;
+    width: 100vw;
+}
+
+
+.left {
+    box-sizing: border-box;
+    width: 67%;
+   
+    background: var(--gris-clair);
+    min-height: 400px;
+    padding: 20px;
+}
+
+.page .left {
     width: 100%;
 }
 
-.contenutextes {
+.article {
+    background: white;
+    /* max-width: 95%; */
+    padding: 20px;
+    /* border-bottom: solid 5px black; */
+    margin-bottom: 30px;
+    background-size: 150px;
+    background-repeat: no-repeat;
+}
+
+.article img {
+    width: 100%;
+}
+
+.article h2 {
+    color:var(--main-bg-color);
+}
+
+.date {
+    color:red;
+}
+
+
+.right {
+    box-sizing: border-box;
+    width:33%;
+ 
+    
+    background: #ccae62;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #333;
+}
+
+h1 {
+    font-size: 40px;
+    color:white;
+    margin: 40px 0 10px 0;
+}
+
+h2 {
+    font-size: 30px;
+    color:#d1ccc0;
+    margin: 10px 0;
+}
+
+a {
+    color: var(--main-bg-color);
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: .7;
+}
+
+nav {
+
+    text-align: right;
+    
+}
+
+ul {
+    
+    /* margin-left: auto; */
+}
+
+nav ul li {
+    display: inline;
     padding: 10px;
+    background: var(--gris-clair);
+}
+
+#footer {
+    min-height: 200px;
+    width: 100%;
+    background-color: #cc8e35;
+}
+
+.more-link {
+    color: red;
+}
+
+
+
+
+/*     mes widgets */
+
+
+#rpwwt-recent-posts-widget-with-thumbnails-4 {
+    background-color: white;
+    padding: 20px;
+}
+
+
+#rpwwt-recent-posts-widget-with-thumbnails-4 ul {
+    --wp-admin-theme-color: #007cba;
+    --wp-admin-theme-color-darker-10: #006ba1;
+    --wp-admin-theme-color-darker-20: #005a87;
+    color: rgba(51, 51, 51, 0.7);
+    hyphens: auto;
+    line-height: 1.5;
+    box-sizing: inherit;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    margin: 0 0 1.6em 1.3333em;
+    margin-bottom: 1.5em;
+    list-style: outside none none;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+
+
+#rpwwt-recent-posts-widget-with-thumbnails-4 ul li {
+    --wp-admin-theme-color: #007cba;
+--wp-admin-theme-color-darker-10: #006ba1;
+--wp-admin-theme-color-darker-20: #005a87;
+color: rgba(51, 51, 51, 0.7);
+hyphens: auto;
+line-height: 1.5;
+list-style: outside none none;
+box-sizing: inherit;
+border: 0;
+font-family: inherit;
+font-size: 100%;
+font-style: inherit;
+font-weight: inherit;
+outline: 0;
+padding: 0;
+vertical-align: baseline;
+overflow: hidden;
+margin: 0 0 1.5em;
+}
+
+#rpwwt-recent-posts-widget-with-thumbnails-4 ul li a img {
+
+hyphens: auto;
+line-height: 1.5;
+list-style: outside none none;
+font-family: inherit;
+font-size: 100%;
+font-style: inherit;
+font-weight: inherit;
+color: #333;
+box-sizing: inherit;
+max-width: 100%;
+vertical-align: middle;
+border: 0;
+display: inline;
+float: left;
+margin: .3em .75em .75em 0;
+width: 100px;
+height: 100px;
+}
+
+
+.custom-html-widget {
+    background-color: cyan;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#id_68 {
+
+    background-color: red!important;
 }
